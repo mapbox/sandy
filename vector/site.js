@@ -1,3 +1,5 @@
+// For comprehensive documentation on Polymaps see http://polymaps.org/
+
 var po = org.polymaps;
 
 // Create a map.
