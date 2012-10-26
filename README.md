@@ -6,12 +6,10 @@ Visualizing Hurricane Sandy with NHC data.
 
 This repository contains two demos for working with NHC data:
 
-- A tile maps using TileMill
-- A vector map using ogr2ogr and Polymap
+- A tile maps using TileMill (View demo: [http://mapbox.com/sandy/tiles](http://mapbox.com/sandy/tiles))
+- A vector map using ogr2ogr and Polymap (View demo: [http://mapbox.com/sandy/vector](http://mapbox.com/sandy/vector))
 
 ## Tile Map
-
-[http://mapbox.com/sandy/tiles](http://mapbox.com/sandy/tiles)
 
 - Use [TileMill](http://mapbox.com/tilemill/) to render NHC shapefiles
 - Use [mapbox.js](http://mapbox.com/mapbox.js/api/v0.6.6/) to display tile layer together with [MapBox Streets](https://tiles.mapbox.com/mapbox/map/mapbox-streets).
@@ -19,8 +17,6 @@ This repository contains two demos for working with NHC data:
 - See map embedding with mapbox.js in `tiles/site.js`
 
 ## Vector Map
-
-[http://mapbox.com/sandy/vector](http://mapbox.com/sandy/vector)
 
 - Convert shapefiles to geojson with [GDAL's ogr2ogr](http://www.gdal.org/)
 - Use Polymaps to render geojson on top of [MapBox Streets](https://tiles.mapbox.com/mapbox/map/mapbox-streets).
