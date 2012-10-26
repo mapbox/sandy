@@ -1,12 +1,14 @@
 <div class='legend'>
+	<div class='title'>Hurricane Sandy</div>
+	<div class='sub'>NHC 5-day projection</div>
 	<div class='zones'>
 		<div class='color'>
 			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAdSURBVDiNY/zPoPSfgQLARInmUQNGDRg1YDAZAADiJwJAwtCi/wAAAABJRU5ErkJggg=="/>
-			<span class='label'>3 day cone</span>
+			<span class='clabel'>3 day cone</span>
 		</div>
 		<div class='color'>
 			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAdSURBVDiNY/x/l+E/AwWAiRLNowaMGjBqwGAyAADYsAL7qkubRAAAAABJRU5ErkJggg=="/>
-			<span class='label'>5 day cone</span>
+			<span class='clabel'>5 day cone</span>
 		</div>
 		<div class='color'>
 			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAKCAYAAADGmhxQAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAArSURBVDiNY/zPoPSfgZqgXJCqxjFR1TQagFEHUgpGHUgpGHUgpWDUgZQCAMmsAryTUD3JAAAAAElFTkSuQmCC"/>
@@ -16,19 +18,43 @@
 			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAKCAYAAADGmhxQAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACNSURBVDiN7ZGxCgJBDETfhPsGW8HCX/Rrra2vEbHIWOyq6zVy7AqCDoTsToZhSHQ4cgICCIQwgkdF837LCWZ2zAmhp67ta7nrBGwqAaYLLj5b9dm0iKA71gsGZit+AeRg06EYHfAjG/ypE/83+HWYgHPtpoT1ohJh3PzvM2OEDanCXYB91eRCv4ozOCBvBhk6o6hqCgoAAAAASUVORK5CYII="/>
 			<span class='label'>Tropical Storm Warning/Watch</span>
 		</div> 
+	<div class='source'>Source: <a href='http://www.nhc.noaa.gov/gis/'>NHC GIS Data</a></div>
 	</div>
 </div> 
 
 <style type="text/css">
 .legend {
-		font-family: Arial, sans-serif;
-		padding:4px;
+	font-family: Trebuchet, Arial, sans-serif;
+	padding:4px;
+	background-color:#333;
+	color:#eee;
 	} 
-.zones,
-.centers {
+.title {
+	font-size: 150%;
+	font-weight: bold;
+}
+.sub {
+	font-weight: bold;
+	font-size: 90%
+}
+.clabel {
+	padding-left: 30px;
+}
+.label {
+	padding-left: 5px;
+}
+.zones	 {
 	padding: 2px;
 }
-.color, {
-	padding: 1px;
+.color {
+	padding: 5px;
+}
+.source {
+	padding-top: 5px;
+	font-size: 70%;
+	color: #555;
+}
+a {
+	color: #179;
 }
 </style>

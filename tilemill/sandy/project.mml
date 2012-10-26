@@ -47,7 +47,7 @@
       "id": "yellow",
       "class": "",
       "Datasource": {
-        "file": "/Users/ianvilleda/Downloads/sandy2/al182012.017A_5day_pgn.shp",
+        "file": "/Users/ianvilleda/Downloads/sandy3/al182012.017A_5day_pgn.shp",
         "id": "yellow",
         "project": "sandy",
         "srs": ""
@@ -68,7 +68,7 @@
       "id": "red",
       "class": "",
       "Datasource": {
-        "file": "/Users/ianvilleda/Downloads/sandy2/al182012.017A_5day_pgn.shp",
+        "file": "/Users/ianvilleda/Downloads/sandy3/al182012.017A_5day_pgn.shp",
         "id": "red",
         "project": "sandy",
         "srs": ""
@@ -89,7 +89,7 @@
       "id": "ww",
       "class": "",
       "Datasource": {
-        "file": "/Users/ianvilleda/Downloads/sandy2/al182012.017A_ww_wwlin.shp",
+        "file": "/Users/ianvilleda/Downloads/sandy3/al182012.017A_ww_wwlin.shp",
         "id": "ww",
         "project": "sandy",
         "srs": ""
@@ -110,7 +110,7 @@
       "id": "lines",
       "class": "",
       "Datasource": {
-        "file": "/Users/ianvilleda/Downloads/sandy2/al182012.017A_5day_lin.shp"
+        "file": "/Users/ianvilleda/Downloads/sandy3/al182012.017A_5day_lin.shp"
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -128,7 +128,7 @@
       "id": "points",
       "class": "",
       "Datasource": {
-        "file": "/Users/ianvilleda/Downloads/sandy2/al182012.017A_5day_pts.shp",
+        "file": "/Users/ianvilleda/Downloads/sandy3/al182012.017A_5day_pts.shp",
         "id": "points",
         "project": "sandy",
         "srs": ""
