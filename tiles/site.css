@@ -147,13 +147,17 @@ svg {
   background-color: transparent;
   border: none;
   padding: 0;
-  }
-  .map-legends {
-    background-color: #333;
+  background-color: #333;
   }
   .legend div.title {
     display: none;
     }
   .legend div.sub {
     margin-bottom: 10px;
+  }
+.map-tooltip {
+  top: 120px;
+  background-color: transparent;
+  border: none;
+  background-color: #333;
   }
