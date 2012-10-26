@@ -159,15 +159,19 @@ svg {
   }
 
 #points {
+  fill: #000;
+  opacity: .8;
+  }
+/* Warning */
+#warnings .twr {
   fill: #f00;
   }
-  #points text {
-    fill: #000;
-    }
-
+/* Watch */
+#warnings .twa {
+  fill: #f80;
+  }
 #cone,
-#points,
-#warnings {
+#points {
   }
 
 #cone path {

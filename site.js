@@ -30,9 +30,10 @@ map.add(po.geoJson()
         for (i in data.features) {
             var f      = data.features[i];
             var text   = po.svg('text');
-            console.log(f.element.getAttribute('transform'));
             text.setAttribute('transform', f.element.getAttribute('transform') + ' translate(5, 5)');
-            text.appendChild(document.createTextNode(f.data.properties.DATELBL));
+            text.appendChild(document.createTextNode(
+                f.data.properties.DATELBL + ' (' + f.data.properties.MAXWIND + ' mph)'
+            ));
             f.element.parentNode.appendChild(text);
             f.element.setAttribute('r', 3);
         }
@@ -42,7 +43,13 @@ map.add(po.geoJson()
 map.add(po.geoJson()
     .id('warnings')
     .url("data/geojson/al182012.017A_ww_wwlin.json")
-    .tile(false));
+    .tile(false)
+    .on('load', function(data) {
+        for (i in data.features) {
+            var f = data.features[i];
+            f.element.setAttribute('class', f.data.properties.TCWW.toLowerCase())
+        }
+    }));
 
 // Compass
 map.add(po.compass()
