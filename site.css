@@ -52,7 +52,7 @@ body {
   }
 
 h1 {
-  font-size: 20px;
+  font-size: 25px;
   padding: 10px 0;
   font-weight: bold;
   }
@@ -67,7 +67,7 @@ li {
   }
 
 a {
-  color: #489;
+  color: #56637d;
   text-decoration: none;
   }
 em {
@@ -107,15 +107,18 @@ svg {
   -moz-box-shadow:    10px 0 100px 100px #000;
   -webkit-box-shadow: 10px 0 100px 100px #000;
   height: 0px;
-  padding: 20px 20px 0;
+  padding: 20px 20px 0 ;
   }
   #header h1, #header div {
     display: inline;
     line-height: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     }
+  #header .demo a {
+    float: right;
+  }
   #header div.date {
-    color: #f00;
+    color: #d00;
     padding-left: 20px;
   }
 
