@@ -3,11 +3,15 @@ var po = org.polymaps;
 var map = po.map()
     .container(document.getElementById("map").appendChild(po.svg("svg")))
     .add(po.interact())
-    .add(po.hash());
+    .add(po.hash())
+    .center({lat: 37.194, lon: -71.946})
+    .zoom(5);
 
 map.add(po.image()
     .url(po.url("http://{S}tiles.mapbox.com/v3/lxbarth.map-k77nz5ym/{Z}/{X}/{Y}.png")
     .hosts(["a.", "b.", "c.", "d."])));
+
+4.96/37.194/-71.946
 
 // Cone
 map.add(po.geoJson()
