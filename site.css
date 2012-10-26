@@ -52,7 +52,7 @@ body {
   }
 
 h1 {
-  font-size: 20px;
+  font-size: 25px;
   padding: 10px 0;
   font-weight: bold;
   }
@@ -67,7 +67,7 @@ li {
   }
 
 a {
-  color: #489;
+  color: #56637d;
   text-decoration: none;
   }
 em {
@@ -94,6 +94,33 @@ svg {
 /* --------------------------------------------------------
   Layout
 --------------------------------------------------------- */
+
+#header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.8;
+  box-shadow:         10px 0 100px 100px #000;
+  -moz-box-shadow:    10px 0 100px 100px #000;
+  -webkit-box-shadow: 10px 0 100px 100px #000;
+  height: 0px;
+  padding: 20px 20px 0 ;
+  }
+  #header h1, #header div {
+    display: inline;
+    line-height: 30px;
+    margin-top: 30px;
+    }
+  #header .demo a {
+    float: right;
+  }
+  #header div.date {
+    color: #d00;
+    padding-left: 20px;
+  }
 
 #map {
   position:fixed !important;
@@ -148,6 +175,35 @@ svg {
 .compass.active .active .direction {
   fill: #999;
 }
+
+#legend {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  opacity: .7;
+  padding: 20px;
+  }
+#legend li {
+  line-height: 20px;
+  padding-bottom: 5px;
+  }
+.swatch {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 5px;
+  }
+  .swatch.twa {
+    background-color: #c50;
+    }
+  .swatch.twr {
+    background-color: #c00;
+    }
+#attribution {
+  font-size: 12px;
+  }
 
 /* --------------------------------------------------------
   Map data
