@@ -2,7 +2,7 @@
 
 Visualizing Hurricane Sandy with NHC data.
 
-- [Blog post](http://mapbox.com/blog)
+- [Blog post](http://mapbox.com/blog/mapping-sandy)
 
 This repository contains two demos for working with NHC data:
 
