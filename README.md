@@ -13,15 +13,15 @@ This repository contains two demos for working with NHC data:
 
 [http://mapbox.com/sandy/tiles](http://mapbox.com/sandy/tiles)
 
-- Use TileMill to render NHC shapefiles
-- Use mapbox.js to display tile layer together with MapBox Streets.
+- Use [TileMill](http://mapbox.com/tilemill/) to render NHC shapefiles
+- Use [mapbox.js](http://mapbox.com/mapbox.js/api/v0.6.6/) to display tile layer together with [MapBox Streets](https://tiles.mapbox.com/mapbox/map/mapbox-streets).
 
 ## Vector Map
 
 [http://mapbox.com/sandy/vector](http://mapbox.com/sandy/vector)
 
-- Convert shapefiles to geojson with ogr2ogr
-- Use Polymaps to render geojson on top of MapBox Streets
+- Convert shapefiles to geojson with [GDAL's ogr2ogr](http://www.gdal.org/)
+- Use Polymaps to render geojson on top of [MapBox Streets](https://tiles.mapbox.com/mapbox/map/mapbox-streets).
 
 ## Data
 
