@@ -143,3 +143,17 @@ svg {
   bottom: 10px;
   left: 10px;
   }
+.map-legends {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  }
+  .map-legends {
+    background-color: #333;
+  }
+  .legend div.title {
+    display: none;
+    }
+  .legend div.sub {
+    margin-bottom: 10px;
+  }
