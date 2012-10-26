@@ -1,0 +1,49 @@
+var po = org.polymaps;
+
+var map = po.map()
+    .container(document.getElementById("map").appendChild(po.svg("svg")))
+    .add(po.interact())
+    .add(po.hash());
+
+map.add(po.image()
+    .url(po.url("http://{S}tiles.mapbox.com/v3/lxbarth.map-9zigz7z2/{Z}/{X}/{Y}.png")
+    .hosts(["a.", "b.", "c.", "d."])));
+
+// Cone
+map.add(po.geoJson()
+    .id('cone')
+    .url("data/geojson/al182012.017A_5day_pgn.json")
+    .tile(false));
+
+// Line
+map.add(po.geoJson()
+    .id('lines')
+    .url("data/geojson/al182012.017A_5day_lin.json")
+    .tile(false));
+
+// Points
+map.add(po.geoJson()
+    .id('points')
+    .url("data/geojson/al182012.017A_5day_ptn.json")
+    .tile(false)
+    .on('load', function(data) {
+        for (i in data.features) {
+            var f      = data.features[i];
+            var text   = po.svg('text');
+            console.log(f.element.getAttribute('transform'));
+            text.setAttribute('transform', f.element.getAttribute('transform') + ' translate(5, 5)');
+            text.appendChild(document.createTextNode(f.data.properties.DATELBL));
+            f.element.parentNode.appendChild(text);
+            f.element.setAttribute('r', 3);
+        }
+    }));
+
+// Coastal warnings
+map.add(po.geoJson()
+    .id('warnings')
+    .url("data/geojson/al182012.017A_ww_wwlin.json")
+    .tile(false));
+
+// Compass
+map.add(po.compass()
+    .pan("none"));

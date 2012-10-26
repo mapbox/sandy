@@ -1,0 +1,7 @@
+#!/bin/bash
+# Convert Forecast Track, Cone of Uncertainty, and Watches/Warnings from http://www.nhc.noaa.gov/gis/
+
+ogr2ogr -f "GeoJSON" geojson/al182012.017A_5day_lin.json al182012_5day_latest/al182012.017A_5day_lin.shp
+ogr2ogr -f "GeoJSON" geojson/al182012.017A_5day_pgn.json al182012_5day_latest/al182012.017A_5day_pgn.shp
+ogr2ogr -f "GeoJSON" geojson/al182012.017A_5day_ptn.json al182012_5day_latest/al182012.017A_5day_pts.shp
+ogr2ogr -f "GeoJSON" geojson/al182012.017A_ww_wwlin.json al182012_5day_latest/al182012.017A_ww_wwlin.shp

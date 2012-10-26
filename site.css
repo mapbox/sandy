@@ -1,0 +1,177 @@
+/* ------------------------------------------
+  Reset ♥
+  http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+---------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  }
+html, body, #map {width: 100%; height: 100%;}
+body { line-height: 1; }
+ol, ul { list-style: none;  }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+/* tables still need 'cellspacing='0'' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+:focus { outline: 0; }
+
+/* --------------------------------------------------------
+  Global styles
+--------------------------------------------------------- */
+
+body {
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ddddd8;
+  background-color: #222220;
+  line-height: 20px;
+  }
+
+h1 {
+  font-size: 20px;
+  padding: 10px 0;
+  font-weight: bold;
+  }
+h2 {
+  font-size: 20px;
+  margin: 0 0 20px;
+  }
+
+p,
+li {
+  margin: 0 0 10px;
+  }
+
+a {
+  color: #489;
+  text-decoration: none;
+  }
+em {
+  font-weight: bold;
+  }
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #E5E0D9;
+}
+
+svg {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* --------------------------------------------------------
+  Layout
+--------------------------------------------------------- */
+
+#map {
+  position:fixed !important;
+  width:auto !important;
+  height:auto !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  }
+
+/* --------------------------------------------------------
+  Map
+--------------------------------------------------------- */
+
+.compass .back {
+  fill: #eee;
+  fill-opacity: .8;
+}
+
+.compass .fore {
+  stroke: #999;
+  stroke-width: 1.5px;
+}
+
+.compass rect.back.fore {
+  fill: #999;
+  fill-opacity: .3;
+  stroke: #eee;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+.compass .direction {
+  fill: none;
+}
+
+.compass .chevron {
+  fill: none;
+  stroke: #999;
+  stroke-width: 5px;
+}
+
+.compass .zoom .chevron {
+  stroke-width: 4px;
+}
+
+.compass .active .chevron, .compass .chevron.active {
+  stroke: #fff;
+}
+
+.compass.active .active .direction {
+  fill: #999;
+}
+
+/* --------------------------------------------------------
+  Map data
+--------------------------------------------------------- */
+
+#lines {
+  fill: none;
+  stroke: #f00;
+  }
+
+#points {
+  fill: #f00;
+  }
+  #points text {
+    fill: #000;
+    }
+
+#cone,
+#points,
+#warnings {
+  }
+
+#cone path {
+  opacity: .3;
+  fill: #f00;
+}
+
