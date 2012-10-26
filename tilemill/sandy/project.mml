@@ -1,0 +1,148 @@
+{
+  "bounds": [
+    -84.1114,
+    22.472,
+    -63.9405,
+    44.2767
+  ],
+  "center": [
+    -75.4102,
+    33.578,
+    6
+  ],
+  "format": "png",
+  "interactivity": {
+    "template_teaser": "<b>Maxwind:</b> {{{MAXWIND}}} mph<br />\n<b>Gust:</b> {{{GUST}}} mph ",
+    "fields": [
+      "MAXWIND",
+      "GUST"
+    ],
+    "layer": "points"
+  },
+  "minzoom": 0,
+  "maxzoom": 10,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -82.52581787109375,
+        26.135337829589844,
+        -69.63555908203125,
+        44.335201263427734
+      ],
+      "id": "yellow",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/ianvilleda/Downloads/sandy2/al182012.017A_5day_pgn.shp",
+        "id": "yellow",
+        "project": "sandy",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "yellow"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -82.52581787109375,
+        26.135337829589844,
+        -69.63555908203125,
+        44.335201263427734
+      ],
+      "id": "red",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/ianvilleda/Downloads/sandy2/al182012.017A_5day_pgn.shp",
+        "id": "red",
+        "project": "sandy",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "red"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -81.44000244140625,
+        22.850000381469727,
+        -74.48999786376953,
+        35.79999923706055
+      ],
+      "id": "ww",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/ianvilleda/Downloads/sandy2/al182012.017A_ww_wwlin.shp",
+        "id": "ww",
+        "project": "sandy",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "ww"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -77.5,
+        26.399999618530277,
+        -72.5,
+        40.5
+      ],
+      "id": "lines",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/ianvilleda/Downloads/sandy2/al182012.017A_5day_lin.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "lines"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -77.5,
+        26.399999618530277,
+        -72.5,
+        40.5
+      ],
+      "id": "points",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/ianvilleda/Downloads/sandy2/al182012.017A_5day_pts.shp",
+        "id": "points",
+        "project": "sandy",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "points"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "",
+  "description": "",
+  "legend": "",
+  "attribution": ""
+}
