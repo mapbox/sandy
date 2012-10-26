@@ -6,7 +6,7 @@ var map = po.map()
     .add(po.hash());
 
 map.add(po.image()
-    .url(po.url("http://{S}tiles.mapbox.com/v3/lxbarth.map-9zigz7z2/{Z}/{X}/{Y}.png")
+    .url(po.url("http://{S}tiles.mapbox.com/v3/lxbarth.map-k77nz5ym/{Z}/{X}/{Y}.png")
     .hosts(["a.", "b.", "c.", "d."])));
 
 // Cone
